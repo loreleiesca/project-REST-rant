@@ -3,6 +3,9 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 
+app.set('view engine', 'jsx')
+app.engine('jsx', require('express-react-views').createEngine())
+
 app.use('/places', require('./controllers/places'))
 
 /*The first argument to app.use, /places sets all 
@@ -12,7 +15,7 @@ other path we define in the controller. */
 
 
 app.get('/', (req, res) => {
-    res.send('Hello world!')
+    res.render('home')
 })
 
 
