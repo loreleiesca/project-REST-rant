@@ -1,11 +1,15 @@
-require('dotenv').config()
 
+//Modules and Globals
+require('dotenv').config()
 const express = require('express')
 const app = express()
 
+//Express Settings
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
+app.use(express.static('public'))
 
+//Controllers and Routes
 app.use('/places', require('./controllers/places'))
 
 /*The first argument to app.use, /places sets all 
@@ -24,4 +28,6 @@ app.get('*', (req, res) => {
 })
 //important to leave at bottom or else it will override code
 
+
+//Listen for connections
 app.listen(process.env.PORT)
