@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 
 
 app.get('*', (req, res) => {
-    res.status(404).send('<h1> 404 Page </h1>')
+    res.render('error404')
 })
 //important to leave at bottom or else it will override code
 
