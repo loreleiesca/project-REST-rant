@@ -2,15 +2,27 @@
 const router = require('express').Router()
 
 // GET/ places
-router.get('/', (req, res) => {
+router.get('/:id', (req, res) => {
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+      res.render('error404')
+    }
+    else if (!places[id]) {
+      res.render('error404')
+    }
+    else {
+      res.render('places/show', { place: places[id] })
+    }
+  })
+  
     /*let places = [{
         name: 'Dutch Bros',
         city: 'Grants Pass',
         state: 'OR', 
         cuisines: 'Coffee'
-        piic
+        pic
     }]*/
-    let places = [{
+    /*let places = [{
         name: 'H-Thai-ML',
         city: 'Seattle',
         state: 'WA',
@@ -22,9 +34,7 @@ router.get('/', (req, res) => {
         state: 'AZ',
         cuisines: 'Coffee, Bakery',
         pic: 'http://placekitten.com/250/250'
-      }]
-      
-    res.render('places/index', { places })
-})
+      }]*/
+    //res.render('places/index', { places }) })
 
 module.exports = router
