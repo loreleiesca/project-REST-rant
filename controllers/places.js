@@ -2,7 +2,7 @@
 const router = require('express').Router()
 
 
-/*let places = [{
+let places = [{
   name: 'Dutch Bros',
   city: 'Grants Pass',
   state: 'OR', 
@@ -14,7 +14,7 @@ const router = require('express').Router()
   state: 'AZ',
   cuisines: 'Coffee, Bakery',
   pic: '/images/big-eye-kitty.jpg'
-}]*/
+}]
 
 router.get('/new', (req, res) => {
   res.render('places/new')

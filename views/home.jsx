@@ -7,14 +7,12 @@ function home () {
     return (
         <Def>
             <main>
-                <h1>HOME</h1>
+                <h1>Home</h1>
                 <div>
                     <img src="/images/yummy-bowl.jpg" alt="Food Bowl" />
                     <div>
-                        Photo by <a href="https://unsplash.com/@pwign?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-                        Anh Nguyen</a> on 
-                        <a href="https://unsplash.com/photos/kcA-c3f_3FE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-                        Unsplash</a>
+                        Photo by <a href="https://unsplash.com/@pwign?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"> Anh Nguyen</a> on 
+                        <a href="https://unsplash.com/photos/kcA-c3f_3FE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"> Unsplash</a>
                     </div>
                 </div>
                 <a href="/places">

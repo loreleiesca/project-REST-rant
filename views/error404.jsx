@@ -11,10 +11,8 @@ function error404 () {
                 <div>
                     <img src="/images/standing-otter.jpg" alt="Standing Otter" />
                     <div>
-                        Photo by <a href="https://unsplash.com/@rayhennessy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-                        Ray Hennessy</a> on 
-                        <a href="https://unsplash.com/photos/lAJWoAR9RTU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-                        Unsplash</a>
+                        Photo by <a href="https://unsplash.com/@rayhennessy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"> Ray Hennessy</a> on 
+                        <a href="https://unsplash.com/photos/lAJWoAR9RTU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"> Unsplash</a>
                     </div>
                 </div>
             </main>
