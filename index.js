@@ -16,10 +16,6 @@ app.use(methodOverride('method'))
 //Controllers and Routes
 app.use('/places', require('./controllers/places'))
 
-/*The first argument to app.use, /places sets all 
-routes in the places controller relative to /places. 
-This means that /places will be added in front of any 
-other path we define in the controller. */
 
 
 app.get('/', (req, res) => {
