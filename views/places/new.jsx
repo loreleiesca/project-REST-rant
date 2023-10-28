@@ -6,10 +6,11 @@ function new_form () {
         <Def>
           <main>
             <h1>Add a New Place</h1>
-            <form method="POST" action="/places">
+            <form method="POST" action={`/places/$(data.place.id)?_method=PUT`}>
+                <div clasName="row">
                 <div className="form-group col-sm-6">
                     <label htmlFor="name">Place Name</label>
-                    <input className="form-control" id="name" name="name" required/>
+                    <input className="form-control" id="name" name="name" value={data.place.name} required/>
                 </div>
                 <div className="form-group col-sm-6">
                     <label htmlFor="pic">Place Picture</label>
@@ -28,6 +29,7 @@ function new_form () {
                     <input className="form-control" id="cuisines" name="cuisines" required/>
                 </div>
                     <input className="btn btn-primary" type="submit" value="Add Place" />
+                </div>
                 </form>
             </main>
         </Def>
