@@ -16,7 +16,7 @@ h1 {
     color: cornflowerblue;
   }
 
-  nav {
+nav {
     background-color: cornflowerblue;
     padding: 10px;
 }
@@ -39,6 +39,12 @@ nav a {
 nav a:hover {
     color: pink;
     text-decoration: none;
+}
+
+img {
+    text-align: center;
+    width: 500px;
+    height: 450px;
 }
 
   

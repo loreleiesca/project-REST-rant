@@ -43,6 +43,7 @@ router.get('/:id', (req, res) => {
     }
   })
   
+  //res.render('places/show', { place: places[id] })
 
     //res.render('places/index', { places }) })
 
